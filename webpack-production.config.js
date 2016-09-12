@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-const buildPath = path.resolve(__dirname, 'build');
+const buildPath = path.resolve(__dirname, 'dist');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
@@ -8,8 +8,8 @@ const config = {
   entry: [path.join(__dirname, '/src/app/app.js')],
   devtool: 'source-map',
   output: {
-    path: buildPath, // Path of output file
-    filename: 'app.js', // Name of output file
+    path: buildPath,
+    filename: 'app.js',
   },
   plugins: [
     new webpack.DefinePlugin({

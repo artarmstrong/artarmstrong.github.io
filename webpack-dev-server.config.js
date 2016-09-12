@@ -1,27 +1,26 @@
 const webpack = require('webpack');
 const path = require('path');
-const buildPath = path.resolve(__dirname, 'build');
+const buildPath = path.resolve(__dirname, 'dist');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 const config = {
-  // Entry points to the project
   entry: [
     'webpack/hot/dev-server',
     'webpack/hot/only-dev-server',
     path.join(__dirname, '/src/app/app.js'),
   ],
   devServer: {
-    contentBase: 'src/www', // Relative directory for base of server
+    contentBase: 'src/www',
     devtool: 'eval',
-    hot: true, // Live-reload
+    hot: true,
     inline: true,
-    port: 3000, // Port Number
-    host: 'localhost', // Change to '0.0.0.0' for external facing server
+    port: 3000,
+    host: 'localhost',
   },
   devtool: 'eval',
   output: {
-    path: buildPath, // Path of output file
+    path: buildPath,
     filename: 'app.js',
   },
   plugins: [
