@@ -8,13 +8,13 @@ import MenuItem from 'material-ui/MenuItem';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar';
+import { Link } from 'react-router';
+import FlatButton from 'material-ui/FlatButton';
 
 const styles = {
   container: {
     textAlign: 'center',
     bottom: 0,
-    position: 'fixed',
-    width: '100%',
     fontSize: '10px',
   },
   text: {
@@ -44,11 +44,11 @@ export default class ToolbarExamplesSimple extends React.Component {
           />
         </ToolbarGroup>
         <ToolbarGroup>
-          <FontIcon
-            className="material-icons"
-            style={styles.icon}>
-            home
-          </FontIcon>
+          <IconButton
+            iconClassName="muidocs-icon-custom-github"
+            tooltip="GitHub"
+            href="http://github.com/artarmstrong"
+          />
         </ToolbarGroup>
       </Toolbar>
     );

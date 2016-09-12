@@ -7,6 +7,7 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Header from './Header';
+import Article from './Article';
 import Footer from './Footer';
 
 class Main extends React.Component {
@@ -15,7 +16,9 @@ class Main extends React.Component {
       <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
         <div>
           <Header />
-          <p>Test test test</p>
+          <Article />
+          <Article />
+          <Article />
           <Footer />
         </div>
       </MuiThemeProvider>
