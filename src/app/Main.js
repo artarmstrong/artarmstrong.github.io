@@ -15,11 +15,11 @@ class Main extends React.Component {
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
         <div>
-          <Header />
-          <Article />
-          <Article />
-          <Article />
-          <Footer />
+              <Header />
+              <Article />
+              <Article />
+              <Article />
+              <Footer />
         </div>
       </MuiThemeProvider>
     );

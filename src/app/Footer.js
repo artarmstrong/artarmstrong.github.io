@@ -36,7 +36,7 @@ export default class ToolbarExamplesSimple extends React.Component {
 
   render() {
     return (
-      <Toolbar style={styles.container}>
+      <Toolbar className="footer" style={styles.container}>
         <ToolbarGroup>
           <ToolbarTitle
             text="Copyright 2016"
