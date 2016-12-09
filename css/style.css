@@ -515,11 +515,9 @@ ol.type li a:hover {
 	background: #f6f6f6;
 }
 #contact i.fa {
-	color: #121d1f;
 	margin-bottom: 10px;
 }
 #contact .text-danger {
-	color: #E87E04;
 	text-align: left;
 }
 label {
@@ -527,41 +525,6 @@ label {
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 	float: left;
-}
-#contact .form-control {
-	display: block;
-	width: 100%;
-	padding: 6px 12px;
-	font-size: 14px;
-	line-height: 1.42857143;
-	color: #2c3e50;
-	background-color: rgba(255,255,255,0.8);
-	background-image: none;
-	border: 0;
-	border-radius: 2px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: none;
-}
-#contact .form-control:focus {
-	border-color: inherit;
-	outline: 0;
-	-webkit-box-shadow: transparent;
-	box-shadow: transparent;
-}
-.form-control::-webkit-input-placeholder {
-color: #2c3e50;
-}
-.form-control:-moz-placeholder {
-color: #2c3e50;
-}
-.form-control::-moz-placeholder {
-color: #2c3e50;
-}
-.form-control:-ms-input-placeholder {
-color: #2c3e50;
 }
 #contact .social {
 	margin-top: 0;
